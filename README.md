@@ -14,6 +14,13 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 - Visual Studio ou Visual Studio Code para ASP.NET 
 - SQL Server: [https://www.microsoft.com/pt-br/sql-server/sql-server-downloads](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
 
+### Clone este repositorio e para se conectar com o banco faça:
+ - Vá até a pasta ClientApp e digite: npm install
+ - Abra o arquivo appsettings.json e verifique se a configuração da conexão com o banco de dados está correta. Deve ser semelhante a:
+ "ConnectionStrings": {
+    "DefaultConnection": "Server=NomeDoServidor;Database=UserDB;Trusted_Connection=True;MultipleActiveResultSets=true"
+}
+
 ### Configurando o Banco de Dados (SQL Server)
 
 1. Certifique-se de que o SQL Server esteja instalado em sua máquina. Você pode baixá-lo em [https://www.microsoft.com/pt-br/sql-server/sql-server-downloads](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads).
@@ -41,12 +48,9 @@ CREATE TABLE Users (
     NivelPrivilegio INT
 );
 
-### Clone este repositorio e para se conectar com o banco faça:
- - Vá até a pasta ClientApp e digite: npm install
- - Abra o arquivo appsettings.json e verifique se a configuração da conexão com o banco de dados está correta. Deve ser semelhante a:
- "ConnectionStrings": {
-    "DefaultConnection": "Server=NomeDoServidor;Database=UserDB;Trusted_Connection=True;MultipleActiveResultSets=true"
-}
+
+
+
 
 
 
